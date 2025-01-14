@@ -1,7 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
     <application
         android:label="client_flutter_symds"
         android:name="${applicationName}"
+        android:usesCleartextTraffic="true"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
@@ -30,6 +32,15 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+
+        <service 
+            android:name="org.jumpmind.symmetric.android.SymmetricService" 
+            android:enabled="true"
+            android:exported="true"> 
+            <!-- <intent-filter> 
+                <action android:name="org.jumpmind.symmetric.android.SymmetricService" /> 
+            </intent-filter>  -->
+        </service>
     </application>
     <!-- Required to query activities that can process text, see:
          https://developer.android.com/training/package-visibility and

@@ -43,6 +43,18 @@ flutter {
     source = "../.."
 }
 
-dependencies { 
-    implementation("org.jumpmind.symmetric:symmetric-pro-android:3.15.0")
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    // implementation name: 'symmetric-android-3.14.18'
+
+    // implementation name: 'symmetric-core-3.14.18'
+
+    // implementation name: 'symmetric-core-3.14.18'
+    
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
 }
