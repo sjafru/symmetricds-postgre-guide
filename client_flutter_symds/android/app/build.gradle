@@ -50,11 +50,5 @@ repositories {
 }
 
 dependencies {
-    // implementation name: 'symmetric-android-3.14.18'
-
-    // implementation name: 'symmetric-core-3.14.18'
-
-    // implementation name: 'symmetric-core-3.14.18'
-    
     implementation fileTree(include: ['*.jar'], dir: 'libs')
 }
