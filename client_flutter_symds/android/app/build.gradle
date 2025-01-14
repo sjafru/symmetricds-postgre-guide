@@ -5,6 +5,16 @@ plugins {
     id "dev.flutter.flutter-gradle-plugin"
 }
 
+dependencies {
+     implementation("org.jumpmind.symmetric:symmetric-pro-android:3.15.0") {
+          exclude(group = "org.slf4j", module="slf4j-api")
+          exclude(group = "org.slf4j", module="jcl-over-slf4j")
+          exclude(group = "org.apache.logging.log4j", module="log4j-slf4j-impl")
+          exclude(group = "org.apache.logging.log4j", module="log4j")
+          exclude(group = "org.apache.logging.log4j", module="log4j-core")
+     }
+}
+
 android {
     namespace = "com.example.client_flutter_symds"
     compileSdk = flutter.compileSdkVersion
