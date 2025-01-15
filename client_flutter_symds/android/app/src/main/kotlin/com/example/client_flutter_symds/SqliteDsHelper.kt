@@ -4,7 +4,7 @@ import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 
-val DATABASE_NAME = "DatabaseName"
+val DATABASE_NAME = "demosymds.db"
 val DATABASE_VERSION = 1
 
 class SDSDbHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {

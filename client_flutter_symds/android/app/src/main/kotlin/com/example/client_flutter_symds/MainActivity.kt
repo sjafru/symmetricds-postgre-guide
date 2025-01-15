@@ -26,7 +26,7 @@ class MainActivity: FlutterActivity() {
 
         val properties = Properties()
 
-        // properties.setProperty(ParameterConstants.AUTO_RELOAD_ENABLED, "true")
+        properties.setProperty("auto.reload", "true")
 
         intent.putExtra(SymmetricService.INTENTKEY_PROPERTIES, properties)
         intent.putExtra(SymmetricService.INTENTKEY_EXTERNAL_ID, "android-simulator")
